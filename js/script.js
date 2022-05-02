@@ -17,18 +17,13 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const age17 = document.getElementById("age17").checked
-  const age13 = document.getElementById("age13").checked
-  const age5 = document.getElementById("age5").checked
+  const day = document.getElementById("day").checked
+  const age = document.getElementById("age").checked
 
   // process
-  if (age17 == true) {
-      document.getElementById("answer").innerHTML= "You can see an R rated movie alone"
-  } else if (age13 == true) {
-      document.getElementById("answer").innerHTML= "You can see an PG 13 rated movie alone"
-  } else if (age5 == true) {
-      document.getElementById("answer").innerHTML= "You can see an G rated movie alone"
+  if (day == "tuesday" || day == "thursday") || (age > 12 && age < 21); {
+      document.getElementById("answer").innerHTML= "You're eligible for student pricing"
   } else {
-      document.getElementById("answer").innerHTML= "Uh. You are too young for most things!"
+      document.getElementById("answer").innerHTML= "You must pay regular price"
   }
 }
