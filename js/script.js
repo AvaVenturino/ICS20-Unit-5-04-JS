@@ -17,13 +17,12 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const tuesday = document.getElementById("tuesday").value
-  const thursday = document.getElementById("thursday").value
   const day = document.getElementById("day").checked
   const age = document.getElementById("age").checked
 
   // process
-  if ((day == tuesday || day == thursday) || (age > 12 && age < 21)) {
+  console.log (day)
+  if ((day == "tuesday" || day == "thursday") || (age > 12 && age < 21)) {
       document.getElementById("answer").innerHTML= "You're eligible for student pricing"
   } else {
       document.getElementById("answer").innerHTML= "You must pay regular price"
