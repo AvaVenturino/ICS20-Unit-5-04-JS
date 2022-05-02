@@ -8,8 +8,8 @@
  * Check servie worker.
  */
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register("/ICS20-Unit-5-03-JS/sw.js", {
-    scope: "/ICS20-Unit-5-03-JS/",
+  navigator.serviceWorker.register("/ICS20-Unit-5-04-JS/sw.js", {
+    scope: "/ICS20-Unit-5-04-JS/",
   })
 }
 
@@ -17,8 +17,8 @@ if (navigator.serviceWorker) {
  * Input
  */
 function myButtonClicked() {
-  const tuesday = (document.getElementById("tuesday").value
-  const thursday = (document.getElementById("thursday").value
+  const tuesday = document.getElementById("tuesday").value
+  const thursday = document.getElementById("thursday").value
   const day = document.getElementById("day").checked
   const age = document.getElementById("age").checked
 
