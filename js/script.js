@@ -21,7 +21,6 @@ function myButtonClicked() {
   const age = document.getElementById("age").checked
 
   // process
-  console.log (day)
   if ((day == "tuesday" || day == "thursday") || (age > 12 && age < 21)) {
       document.getElementById("answer").innerHTML= "You're eligible for student pricing"
   } else {
